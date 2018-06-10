@@ -711,7 +711,7 @@ class Parser(object):
 
             # coerce ints if we can
             try:
-                new_data = data.astype('int64')
+                new_data = data.astype('float64')
                 if (new_data == data).all():
                     data = new_data
                     result = True
