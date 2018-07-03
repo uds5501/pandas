@@ -158,7 +158,7 @@ Datetimelike
 
 - Fixed bug where two :class:`DateOffset` objects with different ``normalize`` attributes could evaluate as equal (:issue:`21404`)
 - Bug in :class:`Index` with ``datetime64[ns, tz]`` dtype that did not localize integer data correctly (:issue:`20964`)
--
+- Bug in :meth:`to_datetime` with Index did not containt name kwargs (:issue:`21697`)
 
 Timedelta
 ^^^^^^^^^
